@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonAvatar, IonLabel, IonItemOptions, IonItemSliding } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonAvatar, IonLabel, IonItemOptions, IonItemSliding, IonButton } from '@ionic/react';
 import React from 'react';
 import './Home.css';
 
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Latihan1</IonTitle>
+          <IonTitle>List View sliding</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
             <IonItemSliding key={elem.name}>
               <IonItem>
                 <IonAvatar>
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCo3JjSfJjrXREp0A4AiBN5yFKGoS0VyygjA&usqp=CAU"></img>
+                  <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></img>
                 </IonAvatar>
                 <IonLabel class="view" className="ion-padding">
                   <h2>{elem.name}</h2>
@@ -52,6 +52,8 @@ const Home: React.FC = () => {
             </IonItemSliding>
           ))}
         </IonList>
+
+        <IonButton>Next To cou</IonButton>
         <IonHeader collapse="condense">
         </IonHeader>
       </IonContent>
